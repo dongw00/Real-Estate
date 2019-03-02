@@ -1,0 +1,4 @@
+var index = {
+};
+
+index.init();
