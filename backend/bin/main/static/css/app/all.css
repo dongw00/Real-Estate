@@ -1,0 +1,56 @@
+@import url('/css/app/font/jejugothic.css');
+
+* {
+  font-family: 'Jeju Gothic', sans-serif;
+}
+
+/** booking.com logo **/
+#logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/** mobile button **/
+@media (max-width: 768px) {
+  #navbar-toggle {
+    display: inline;
+  }
+}
+
+@media (min-width: 721px) {
+  #navbar-toggle {
+    margin: 55px 20px 0 0;
+  }
+}
+
+#navbar-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none !important;
+  }
+  .d-md-block {
+    display: block !important;
+  }
+}
+
+/** Footer **/
+.footer {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+  color: #b5b5b5;
+}

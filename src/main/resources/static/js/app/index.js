@@ -1,4 +1,0 @@
-var index = {
-};
-
-index.init();

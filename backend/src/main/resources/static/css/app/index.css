@@ -1,0 +1,91 @@
+@import url('/css/lib/animate.css');
+/**
+/** main image part **/
+
+.main_background_with_img {
+  position: relative;
+  width: 100%;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  overflow: hidden;
+}
+
+.main_background-black {
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.one-page-arrow {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.main-univ_search {
+  z-index: 1000;
+}
+
+/** typed.js **/
+.main-univ_search .typed-cursor {
+  font-size: 2.4em;
+  color: white;
+}
+
+/** typeahead **/
+.twitter-typeahead {
+  width: 100%;
+  text-align: left;
+}
+
+.input_noborder_white {
+  background-color: rgba(96, 125, 139, 0);
+  border-top: 0px;
+  border-bottom: 1px solid transparent;
+  border-left: 0px;
+  border-right: 0px;
+  font-size: 40px;
+  width: 100%;
+  height: 60px;
+}
+
+#info {
+  font-size: 90% !important;
+}
+
+/** Mobile **/
+
+@media (min-width: 801px) {
+  .main_background-black {
+    padding-top: 200px;
+    padding-bottom: 535px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main_background-black {
+    padding-top: 100px;
+    padding-bottom: 300px;
+  }
+}
+
+@media (max-width: 980px) {
+  .main-univ_search > .twitter-typeahead > .tt-dropdown-menu > .tt-dataset-0 {
+    float: left;
+    margin-top: 35px;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
